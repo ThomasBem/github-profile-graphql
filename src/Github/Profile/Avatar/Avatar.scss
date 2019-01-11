@@ -1,0 +1,14 @@
+:local(.root) {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  img {
+    border-radius: 50%;
+    height: 200px;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+}

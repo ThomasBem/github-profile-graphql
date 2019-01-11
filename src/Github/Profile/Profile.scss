@@ -1,0 +1,51 @@
+:local(.root) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #512D6D;
+  border-radius: 5px;
+  background: #512D6D;
+  color: #FFFFFF;
+  padding: 15px;
+
+  .profile-info {
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .name {
+      font-weight: bold;
+      padding: 12px;
+    }
+
+    .bio {
+      margin-bottom: 16px;
+    }
+
+    .follower-and-repos {
+      display: flex;
+      justify-content: space-evenly;
+
+      .follower-heading {
+        opacity: 0.8;
+      }
+
+      .follower-count {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .repository-heading {
+        opacity: 0.8;
+      }
+
+      .repository-count {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
