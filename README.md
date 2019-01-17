@@ -8,7 +8,7 @@ In Index.js replace the part that says: _REPLACE_WITH_YOUR_GITHUB_PERSONAL_ACCES
 * Go into Github -> Settings -> Developer settings -> Personal access token.
 * Create a token that has the read:user right
 * Put that token in instead of the _REPLACE..._ text
-* You should now be able to just do npm start
+* You should now be able to run "npm start"
 
 ## License
 
