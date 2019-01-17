@@ -1,7 +1,7 @@
 import React from 'react';
 
 import style from './Profile.scss';
-import Avatar from './Avatar/Avatar';
+import Avatar from './avatar/Avatar';
 
 const Profile = ({ profile, openGithubProfile }) => (
   <div className={style.root}>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import style from './App.scss'
-import Github from './Github/Github';
+import Github from './github/Github';
 
 class App extends React.Component {
   constructor(props) {

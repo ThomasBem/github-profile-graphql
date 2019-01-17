@@ -3,7 +3,7 @@ import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 
 import style from './Github.scss';
-import Profile from './Profile/Profile';
+import Profile from './profile/Profile';
 
 const GET_PROFILE = gql`
   query githubUser($username: String!) {
