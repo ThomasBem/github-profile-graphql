@@ -6,7 +6,7 @@ import Github from './github/Github';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { username: "thomasbem", inputValue: '' };
+    this.state = { username: "gaearon", inputValue: '' };
   }
 
   handleChange = event => {
