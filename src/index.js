@@ -7,12 +7,14 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const GITHUB_API_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
+
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   request: operation => {
     operation.setContext({
       headers: {
-        authorization: 'Bearer _REPLACE_WITH_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN_',
+        authorization: `Bearer ${GITHUB_API_TOKEN}`,
       },
     });
   }
