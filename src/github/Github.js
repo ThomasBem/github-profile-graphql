@@ -3,6 +3,8 @@ import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 
 import Loading from './common/loading/Loading';
+import Error from './common/error/Error';
+
 import style from './Github.scss';
 import Profile from './profile/Profile';
 
@@ -28,7 +30,7 @@ const Github = ({ username, openGithubProfile }) => (
   <Query query={GET_PROFILE} variables={{ username }}>
     {({ loading, error, data}) => {
       if (loading) return <Loading />;
-      if (error) return <div className="error">Error...</div>;
+      if (error) return <Error errorMessage={error.message} />;
 
       const profile = {
         name: data.user.name || 'No name',

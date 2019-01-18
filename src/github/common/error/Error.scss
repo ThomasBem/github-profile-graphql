@@ -1,0 +1,19 @@
+:local(.root) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #512D6D;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 334px;
+    height: 412px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
